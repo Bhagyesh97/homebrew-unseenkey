@@ -1,28 +1,28 @@
 class Usk < Formula
   desc "Use API keys without seeing them: local vault and policy broker for agents and contractors"
   homepage "https://github.com/Bhagyesh97/unseenkey"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.1/usk-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "2ec69afb026089fb3f4b233b9f3a831fdc799655118de1f0a1264110d5b60011"
+      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.2/usk-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "3e90504cbcb1cc0ec4abb50c8fde039e4d9fbcebfce14716f5aa7f0846aee07a"
     end
     on_intel do
-      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.1/usk-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "6fb525b9a599c00cd6b2d6af7885f000a039f4afaaf53a0407c4543d45d2bad3"
+      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.2/usk-v0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "da00eb832b69ea22f6c00f40701b1fea33719bbd7ba63966f3dbb8e0ee7a45f5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.1/usk-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d144fff9e441197a274f3469ac0abd4eb5d562c5804670faa9d2679e546970bd"
+      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.2/usk-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "259ed0a3cd872fd731d80ffdc7e050ab2c04785774ec45f3b126fac8edf6bec7"
     end
     on_intel do
-      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.1/usk-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f3ff509a4a6bb6a8538ef077f1c3a137580cdd3cc03426670a2453b4c535c5c2"
+      url "https://github.com/Bhagyesh97/unseenkey/releases/download/v0.1.2/usk-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6542c8ed24a77b94b2c222557bc8e1dead517a7eea1cb854da9aacd2def0305b"
     end
   end
 
@@ -31,6 +31,6 @@ class Usk < Formula
   end
 
   test do
-    assert_match "usk 0.1.1", shell_output("#{bin}/usk --version")
+    assert_match "usk 0.1.2", shell_output("#{bin}/usk --version")
   end
 end
